@@ -1,0 +1,1657 @@
+﻿Log file open, 07/22/17 14:13:50
+LogInit:Display: Running engine for game: DL_Prototype
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1165826052) SRandInit(-1165826051).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.077848
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3514769
+LogInit: Engine Version: 4.16.2-3514769+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): Jun 29 2017 02:03:24
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: F:/UNREAL/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.07.22-21.13.50:406][  0]LogInit: Selected Device Profile: [Windows]
+[2017.07.22-21.13.50:406][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.07.22-21.13.50:449][  0]LogInit: Computer: DESKTOP-DB8G6DD
+[2017.07.22-21.13.50:449][  0]LogInit: User: PriestBeast
+[2017.07.22-21.13.50:449][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.07.22-21.13.50:449][  0]LogInit: High frequency timer resolution =3.914066 MHz
+[2017.07.22-21.13.50:450][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2017.07.22-21.13.50:450][  0]LogMemory: Platform Memory Stats for Windows
+[2017.07.22-21.13.50:450][  0]LogMemory: Process Physical Memory: 273.26 MB used, 273.26 MB peak
+[2017.07.22-21.13.50:450][  0]LogMemory: Process Virtual Memory: 260.82 MB used, 260.82 MB peak
+[2017.07.22-21.13.50:450][  0]LogMemory: Physical Memory: 6785.34 MB used,  25903.34 MB free, 32688.68 MB total
+[2017.07.22-21.13.50:450][  0]LogMemory: Virtual Memory: 624.04 MB used,  25903.34 MB free, 134217728.00 MB total
+[2017.07.22-21.13.50:504][  0]LogInit: Using OS detected language (en-US).
+[2017.07.22-21.13.50:504][  0]LogInit: Using OS detected locale (en-US).
+[2017.07.22-21.13.50:506][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2017.07.22-21.13.51:186][  0]LogD3D11RHI: D3D11 adapters:
+[2017.07.22-21.13.51:220][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 960' (Feature Level 11_0)
+[2017.07.22-21.13.51:220][  0]LogD3D11RHI:       4062/0/16344 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.07.22-21.13.51:221][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.07.22-21.13.51:221][  0]LogD3D11RHI:       0/0/16344 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.07.22-21.13.51:221][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.07.22-21.13.51:226][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.07.22-21.13.51:226][  0]LogD3D11RHI:     GPU DeviceId: 0x1401 (for the marketing name, search the web for "GPU Device Id")
+[2017.07.22-21.13.51:226][  0]LogWindows: EnumDisplayDevices:
+[2017.07.22-21.13.51:226][  0]LogWindows:    0. 'NVIDIA GeForce GTX 960' (P:0 D:1)
+[2017.07.22-21.13.51:226][  0]LogWindows:    1. 'NVIDIA GeForce GTX 960' (P:1 D:1)
+[2017.07.22-21.13.51:226][  0]LogWindows:    2. 'NVIDIA GeForce GTX 960' (P:0 D:0)
+[2017.07.22-21.13.51:227][  0]LogWindows:    3. 'NVIDIA GeForce GTX 960' (P:0 D:0)
+[2017.07.22-21.13.51:227][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.07.22-21.13.51:227][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 960
+[2017.07.22-21.13.51:227][  0]LogD3D11RHI:   Driver Version: 382.05 (internal:22.21.13.8205, unified:382.05)
+[2017.07.22-21.13.51:227][  0]LogD3D11RHI:      Driver Date: 5-1-2017
+[2017.07.22-21.13.51:227][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.07.22-21.13.51:248][  0]LogD3D11RHI: Async texture creation enabled
+[2017.07.22-21.13.51:258][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.07.22-21.13.51:309][  0]LogShaderCompilers: Guid format shader working directory is -15 characters bigger than the processId version (../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Intermediate/Shaders/WorkingDirectory/27784/).
+[2017.07.22-21.13.51:309][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Priest_Beast/AppData/Local/Temp/UnrealShaderWorkingDir/4AD262C64D85BE8DD270A987A0A37E17/'.
+[2017.07.22-21.13.51:309][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.07.22-21.13.52:022][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.07.22-21.13.52:051][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.07.22-21.13.52:079][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.07.22-21.13.52:108][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.07.22-21.13.52:137][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.07.22-21.13.52:166][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.07.22-21.13.52:195][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.07.22-21.13.52:225][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.07.22-21.13.52:249][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.07.22-21.13.52:277][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.07.22-21.13.52:306][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.07.22-21.13.52:334][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.07.22-21.13.52:363][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.07.22-21.13.52:391][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.07.22-21.13.52:420][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.07.22-21.13.52:476][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.07.22-21.13.52:476][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.07.22-21.13.52:499][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.07.22-21.13.52:561][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.07.22-21.13.52:578][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.07.22-21.13.52:608][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.07.22-21.13.52:638][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.07.22-21.13.52:665][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.07.22-21.13.52:694][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.07.22-21.13.52:694][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.07.22-21.13.52:962][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.07.22-21.13.53:027][  0]LogDerivedDataCache: Loaded boot cache 0.06s 90MB C:/Users/Priest_Beast/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.07.22-21.13.53:027][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Priest_Beast/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.07.22-21.13.53:027][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.07.22-21.13.53:027][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.07.22-21.13.53:027][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.07.22-21.13.53:027][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.07.22-21.13.53:039][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.07.22-21.13.53:051][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Priest_Beast/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.07.22-21.13.53:058][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.07.22-21.13.53:059][  0]LogSlate: Using Freetype 2.6.0
+[2017.07.22-21.13.53:059][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.07.22-21.13.53:059][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.07.22-21.13.53:290][  0]LogInit: Selected Device Profile: [Windows]
+[2017.07.22-21.13.53:348][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.07.22-21.13.53:449][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.07.22-21.13.53:473][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.07.22-21.13.53:502][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.07.22-21.13.53:502][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.07.22-21.13.53:502][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.07.22-21.13.53:848][  0]LogNetVersion: DL_Prototype , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 3417477805)
+[2017.07.22-21.13.53:894][  0]LogAssetRegistry: FAssetRegistry took 0.0247 seconds to start up
+[2017.07.22-21.13.53:958][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.053497 seconds
+[2017.07.22-21.13.53:962][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.07.22-21.13.53:962][  0]LogUObjectAllocator: 7260416 out of 0 bytes used by permanent object pool.
+[2017.07.22-21.13.53:962][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.07.22-21.13.53:994][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.07.22-21.13.55:532][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.07.22-21.13.55:559][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.07.22-21.13.55:923][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.07.22-21.13.56:202][  0]SourceControl: Info Source control is disabled
+[2017.07.22-21.13.56:245][  0]SourceControl: Info Source control is disabled
+[2017.07.22-21.13.56:280][  0]SourceControl: Info Source control is disabled
+[2017.07.22-21.13.56:323][  0]SourceControl: Info Source control is disabled
+[2017.07.22-21.13.56:740][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.07.22-21.13.57:130][  0]LogEngine: Initializing Engine...
+[2017.07.22-21.13.57:130][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.07.22-21.13.57:274][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.07.22-21.13.57:274][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.07.22-21.13.57:346][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.07.22-21.13.57:358][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.07.22-21.13.57:372][  0]LogInit: FAudioDevice initialized.
+[2017.07.22-21.13.57:404][  0]LogDerivedDataCache: Saved boot cache 0.03s 90MB C:/Users/Priest_Beast/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.07.22-21.13.57:412][  0]LogInit: Texture streaming: Enabled
+[2017.07.22-21.13.57:462][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.07.22-21.13.57:584][  0]LogInit: Transaction tracking system initialized
+[2017.07.22-21.13.57:758][  0]BlueprintLog: New page: Editor Load
+[2017.07.22-21.13.58:271][  0]LocalizationService: Info Localization service is disabled
+[2017.07.22-21.13.58:662][  0]LogConsoleResponse:Display: 
+[2017.07.22-21.13.58:758][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.07.22-21.13.58:759][  0]LogCook:Display: Mobile HDR setting 1
+[2017.07.22-21.13.58:846][  0]LogFileCache: Scanning file cache for directory 'F:/JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/' took 0.01s
+[2017.07.22-21.13.59:347][  0]SourceControl: Info Source control is disabled
+[2017.07.22-21.13.59:347][  0]Cmd: MAP LOAD FILE="../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.07.22-21.13.59:363][  0]LightingResults: New page: Lighting Build
+[2017.07.22-21.13.59:385][  0]MapCheck: New page: Map Check
+[2017.07.22-21.13.59:385][  0]LightingResults: New page: Lighting Build
+[2017.07.22-21.14.00:734][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2017.07.22-21.14.00:742][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.07.22-21.14.00:754][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.07.22-21.14.00:794][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 39.726ms to complete.
+[2017.07.22-21.14.00:794][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 1.447
+[2017.07.22-21.14.01:026][  0]LogCollectionManager: Loaded 0 collections in 0.000964 seconds
+[2017.07.22-21.14.01:088][  0]LogFileCache: Scanning file cache for directory 'F:/JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/Collections/' took 0.01s
+[2017.07.22-21.14.01:088][  0]LogFileCache: Scanning file cache for directory 'F:/JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Developers/PriestBeast/Collections/' took 0.01s
+[2017.07.22-21.14.01:088][  0]LogFileCache: Scanning file cache for directory 'F:/JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Collections/' took 0.01s
+[2017.07.22-21.14.01:088][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2017.07.22-21.14.01:095][  0]LogContentBrowser: Native class hierarchy populated in 0.0067 seconds. Added 2329 classes and 491 folders.
+[2017.07.22-21.14.01:129][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2017.07.22-21.14.02:104][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0034 seconds. Added 0 classes and 0 folders.
+[2017.07.22-21.14.02:293][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0014 seconds. Added 1 classes and 2 folders.
+[2017.07.22-21.14.02:441][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.07.22-21.14.02:444][  0]LogSlate: Took 0.000229 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.07.22-21.14.02:445][  0]LogSlate: Took 0.000171 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.07.22-21.14.02:471][  0]LogSlate: Took 0.022729 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.07.22-21.14.02:689][  0]LogRenderer: Reallocating scene render targets to support 1208x576 NumSamples 1 (Frame:1).
+[2017.07.22-21.14.02:800][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.07.22-21.14.02:851][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0016 seconds. Added 1 classes and 2 folders.
+[2017.07.22-21.14.02:851][  0]LogLoad: (Engine Initialization) Total time: 13.92 seconds
+[2017.07.22-21.14.02:851][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.14 seconds
+[2017.07.22-21.14.02:851][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.07.22-21.14.03:186][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.07.22-21.14.03:192][  0]LogOcInput: OculusInput pre-init called
+[2017.07.22-21.14.03:192][  0]LogHMD: Starting GearVRController plugin
+[2017.07.22-21.14.03:222][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.07.22-21.14.03:287][  0]LogSlate: Took 0.009365 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.07.22-21.14.03:878][  2]LogAssetRegistry: Asset discovery search completed in 10.0060 seconds
+[2017.07.22-21.14.03:880][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.07.22-21.14.03:880][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000062 seconds (updated 0 objects)
+[2017.07.22-21.22.01:195][673]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall9)
+[2017.07.22-21.24.29:547][ 74]LogSlate: Took 0.000180 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.07.22-21.24.29:555][ 74]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:/Users/Priest_Beast/Desktop/Scale_Dude.fbx)
+[2017.07.22-21.24.29:564][ 74]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2017.07.22-21.24.29:564][ 74]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2017.07.22-21.24.29:564][ 74]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2017.07.22-21.24.29:564][ 74]LogFbx: ItemName: Geometry, ItemCount : 1
+[2017.07.22-21.24.29:564][ 74]LogFbx: ItemName: Material, ItemCount : 1
+[2017.07.22-21.24.29:564][ 74]LogFbx: ItemName: Model, ItemCount : 1
+[2017.07.22-21.24.29:567][ 74]LogFbx: Loading FBX Scene from C:/Users/Priest_Beast/Desktop/Scale_Dude.fbx
+[2017.07.22-21.24.29:572][ 74]LogFbx: FBX Scene Loaded Succesfully
+[2017.07.22-21.24.33:200][ 74]LogFbx: Loading FBX Scene from C:/Users/Priest_Beast/Desktop/Scale_Dude.fbx
+[2017.07.22-21.24.33:204][ 74]LogFbx: FBX Scene Loaded Succesfully
+[2017.07.22-21.24.33:206][ 74]LogLinker: Can't find file '/Game/Geometry/lambert1'
+[2017.07.22-21.24.33:206][ 74]LogLinker: Can't find file '/Game/Geometry/lambert1'
+[2017.07.22-21.24.33:210][ 74]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2017.07.22-21.24.33:230][ 74]LogFbx:Warning: Triangulating static mesh man_6_foot_tall:Mesh
+[2017.07.22-21.24.33:338][ 74]LogStaticMesh: Building static mesh Scale_Dude...
+[2017.07.22-21.24.33:346][ 74]LogStaticMesh: Built static mesh [0.01s] /Game/Geometry/Scale_Dude.Scale_Dude
+[2017.07.22-21.24.34:655][191]LogActorFactory: Actor Factory created Scale_Dude
+[2017.07.22-21.24.35:421][278]LogActorFactory: Actor Factory created Scale_Dude
+[2017.07.22-21.24.53:131][312]SourceControl: Info On branch WIP
+[2017.07.22-21.24.53:131][312]SourceControl: Info Your branch is up-to-date with 'origin/WIP'.
+[2017.07.22-21.24.53:131][312]SourceControl: Info Changes not staged for commit:
+[2017.07.22-21.24.53:131][312]SourceControl: Info   (use "git add/rm <file>..." to update what will be committed)
+[2017.07.22-21.24.53:131][312]SourceControl: Info   (use "git checkout -- <file>..." to discard changes in working directory)
+[2017.07.22-21.24.53:131][312]SourceControl: Info 	deleted:    Saved/Config/CrashReportClient/UE4CC-Windows-8F79D7F447CBEA5BE7CC3FA5FD215354/CrashReportClient.ini
+[2017.07.22-21.24.53:131][312]SourceControl: Info 	modified:   Saved/Config/Windows/EditorPerProjectUserSettings.ini
+[2017.07.22-21.24.53:131][312]SourceControl: Info 	modified:   Saved/Config/Windows/Engine.ini
+[2017.07.22-21.24.53:131][312]SourceControl: Info 	modified:   Saved/Logs/DL_Prototype.log
+[2017.07.22-21.24.53:131][312]SourceControl: Info Untracked files:
+[2017.07.22-21.24.53:131][312]SourceControl: Info   (use "git add <file>..." to include in what will be committed)
+[2017.07.22-21.24.53:131][312]SourceControl: Info 	Saved/Config/CrashReportClient/UE4CC-Windows-16C06AC9481522BA29536AB92BF9C32D/
+[2017.07.22-21.24.53:131][312]SourceControl: Info 	Saved/Logs/DL_Prototype-backup-2017.07.22-14.13.50.log
+[2017.07.22-21.24.53:131][312]SourceControl: Info no changes added to commit (use "git add" and/or "git commit -a")
+[2017.07.22-21.25.00:148][ 68]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Geometry/Scale_Dude" FILE="../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Geometry/Scale_Dude.uasset" SILENT=true
+[2017.07.22-21.25.00:203][ 68]LogSavePackage: Save=54.14ms
+[2017.07.22-21.25.00:203][ 68]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/Scale_Dude1056266F48D0926CE6C89581DD51AF25.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Geometry/Scale_Dude.uasset'
+[2017.07.22-21.25.00:211][ 68]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Geometry/Scale_Dude.uasset
+[2017.07.22-21.25.21:423][507]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Geometry/lambert1" FILE="../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Geometry/lambert1.uasset" SILENT=true
+[2017.07.22-21.25.21:437][507]LogSavePackage: Save=12.88ms
+[2017.07.22-21.25.21:437][507]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/lambert166B603344AE1C77D94EF58BE2F1B2796.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Geometry/lambert1.uasset'
+[2017.07.22-21.25.21:439][507]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Geometry/lambert1.uasset
+[2017.07.22-21.25.31:992][726]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2017.07.22-21.25.32:902][831]Cmd: SELECT NONE
+[2017.07.22-21.25.35:991][201]SourceControl: Info On branch WIP
+[2017.07.22-21.25.35:991][201]SourceControl: Info Your branch is up-to-date with 'origin/WIP'.
+[2017.07.22-21.25.35:991][201]SourceControl: Info Changes to be committed:
+[2017.07.22-21.25.35:991][201]SourceControl: Info   (use "git reset HEAD <file>..." to unstage)
+[2017.07.22-21.25.35:991][201]SourceControl: Info 	new file:   Content/Geometry/Scale_Dude.uasset
+[2017.07.22-21.25.35:991][201]SourceControl: Info 	new file:   Content/Geometry/lambert1.uasset
+[2017.07.22-21.25.35:991][201]SourceControl: Info Changes not staged for commit:
+[2017.07.22-21.25.35:991][201]SourceControl: Info   (use "git add/rm <file>..." to update what will be committed)
+[2017.07.22-21.25.35:991][201]SourceControl: Info   (use "git checkout -- <file>..." to discard changes in working directory)
+[2017.07.22-21.25.35:991][201]SourceControl: Info 	modified:   Saved/Autosaves/PackageRestoreData.json
+[2017.07.22-21.25.35:992][201]SourceControl: Info 	deleted:    Saved/Config/CrashReportClient/UE4CC-Windows-8F79D7F447CBEA5BE7CC3FA5FD215354/CrashReportClient.ini
+[2017.07.22-21.25.35:992][201]SourceControl: Info 	modified:   Saved/Config/Windows/EditorPerProjectUserSettings.ini
+[2017.07.22-21.25.35:992][201]SourceControl: Info 	modified:   Saved/Config/Windows/Engine.ini
+[2017.07.22-21.25.35:992][201]SourceControl: Info 	modified:   Saved/Logs/DL_Prototype.log
+[2017.07.22-21.25.35:992][201]SourceControl: Info Untracked files:
+[2017.07.22-21.25.35:992][201]SourceControl: Info   (use "git add <file>..." to include in what will be committed)
+[2017.07.22-21.25.35:992][201]SourceControl: Info 	Saved/Config/CrashReportClient/UE4CC-Windows-16C06AC9481522BA29536AB92BF9C32D/
+[2017.07.22-21.25.35:992][201]SourceControl: Info 	Saved/Logs/DL_Prototype-backup-2017.07.22-14.13.50.log
+[2017.07.22-21.25.44:568][228]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (TextRenderActor)
+[2017.07.22-21.25.45:416][325]Cmd: DELETE
+[2017.07.22-21.25.45:416][325]Cmd: ACTOR DELETE
+[2017.07.22-21.25.45:416][325]LogEditorActor: Deleted Actor: TextRenderActor
+[2017.07.22-21.25.45:422][325]LogEditorActor: Deleted 1 Actors (0.006 secs)
+[2017.07.22-21.25.48:174][655]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2017.07.22-21.25.48:497][689]Cmd: DELETE
+[2017.07.22-21.25.48:497][689]Cmd: ACTOR DELETE
+[2017.07.22-21.25.48:497][689]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.07.22-21.25.48:505][689]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2017.07.22-21.25.49:588][819]Cmd: TRANSACTION UNDO
+[2017.07.22-21.25.49:588][819]LogEditorTransaction: Undo Delete Actors
+[2017.07.22-21.25.49:616][819]LogSlate: Took 0.000194 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.07.22-21.25.50:199][888]LogEditorViewport: Clicking on Actor (LMB): DocumentationActor (DocumentationActor1)
+[2017.07.22-21.25.51:427][ 33]Cmd: DELETE
+[2017.07.22-21.25.51:427][ 33]Cmd: ACTOR DELETE
+[2017.07.22-21.25.51:427][ 33]LogEditorActor: Deleted Actor: DocumentationActor
+[2017.07.22-21.25.51:435][ 33]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2017.07.22-21.25.53:369][265]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CubeMesh)
+[2017.07.22-21.25.56:773][655]Cmd: DELETE
+[2017.07.22-21.25.56:773][655]Cmd: ACTOR DELETE
+[2017.07.22-21.25.56:774][655]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.07.22-21.25.56:774][655]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.07.22-21.25.56:774][655]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.07.22-21.25.56:774][655]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.07.22-21.25.56:774][655]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.07.22-21.25.56:782][655]LogEditorActor: Deleted 5 Actors (0.009 secs)
+[2017.07.22-21.25.57:318][719]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Linear_Stair_StaticMesh)
+[2017.07.22-21.25.57:456][732]Cmd: DELETE
+[2017.07.22-21.25.57:456][732]Cmd: ACTOR DELETE
+[2017.07.22-21.25.57:456][732]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.07.22-21.25.57:464][732]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2017.07.22-21.25.59:511][977]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall11)
+[2017.07.22-21.25.59:952][ 26]Cmd: DELETE
+[2017.07.22-21.25.59:952][ 26]Cmd: ACTOR DELETE
+[2017.07.22-21.25.59:952][ 26]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.07.22-21.25.59:959][ 26]LogEditorActor: Deleted 1 Actors (0.007 secs)
+[2017.07.22-21.26.00:294][ 66]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall9)
+[2017.07.22-21.26.00:370][ 71]Cmd: DELETE
+[2017.07.22-21.26.00:370][ 71]Cmd: ACTOR DELETE
+[2017.07.22-21.26.00:370][ 71]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.07.22-21.26.00:376][ 71]LogEditorActor: Deleted 1 Actors (0.006 secs)
+[2017.07.22-21.26.01:430][197]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall7)
+[2017.07.22-21.26.01:526][205]Cmd: DELETE
+[2017.07.22-21.26.01:526][205]Cmd: ACTOR DELETE
+[2017.07.22-21.26.01:526][205]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.07.22-21.26.01:534][205]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2017.07.22-21.26.02:198][285]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall10)
+[2017.07.22-21.26.02:278][291]Cmd: DELETE
+[2017.07.22-21.26.02:278][291]Cmd: ACTOR DELETE
+[2017.07.22-21.26.02:278][291]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.07.22-21.26.02:286][291]LogEditorActor: Deleted 1 Actors (0.008 secs)
+[2017.07.22-21.26.07:027][855]LogRenderer: Reallocating scene render targets to support 1208x924 NumSamples 1 (Frame:11566).
+[2017.07.22-21.26.22:137][484]LogMaterial: Missing cached shader map for material LayerVisMaterial, compiling. 
+[2017.07.22-21.26.22:179][484]LogMaterial: Missing cached shader map for material SelectBrushMaterial, compiling. 
+[2017.07.22-21.26.22:202][484]LogMaterial: Missing cached shader map for material SelectBrushMaterial, compiling. 
+[2017.07.22-21.26.22:243][484]LogMaterial: Missing cached shader map for material MaskBrushMaterial, compiling. 
+[2017.07.22-21.26.22:303][484]LogMaterial: Missing cached shader map for material LandscapeLayerUsageMaterial, compiling. 
+[2017.07.22-21.26.22:412][484]LogMaterial: Missing cached shader map for material CircleBrushMaterial, compiling. 
+[2017.07.22-21.26.22:441][484]LogMaterial: Missing cached shader map for material CircleBrushMaterial, compiling. 
+[2017.07.22-21.26.22:465][484]LogMaterial: Missing cached shader map for material CircleBrushMaterial, compiling. 
+[2017.07.22-21.26.22:488][484]LogMaterial: Missing cached shader map for material CircleBrushMaterial, compiling. 
+[2017.07.22-21.26.22:534][484]LogMaterial: Missing cached shader map for material AlphaBrushMaterial, compiling. 
+[2017.07.22-21.26.22:557][484]LogMaterial: Missing cached shader map for material CircleBrushMaterial, compiling. 
+[2017.07.22-21.26.22:584][484]LogMaterial: Missing cached shader map for material MaskBrushMaterial, compiling. 
+[2017.07.22-21.26.22:600][484]LogTexture:Display: Building textures: Texture2D_2 (G8, 128X128)
+[2017.07.22-21.26.53:806][647]LogTexture:Display: Building textures: Texture2D_0 (BGRA8, 512X512)
+[2017.07.22-21.26.53:820][647]LogTexture:Display: Building textures: Texture2D_1 (BGRA8, 512X512)
+[2017.07.22-21.26.53:830][647]LogTexture:Display: Building textures: Texture2D_2 (BGRA8, 512X512)
+[2017.07.22-21.26.53:839][647]LogTexture:Display: Building textures: Texture2D_3 (BGRA8, 512X512)
+[2017.07.22-21.26.53:848][647]LogTexture:Display: Building textures: Texture2D_4 (BGRA8, 512X512)
+[2017.07.22-21.26.53:857][647]LogTexture:Display: Building textures: Texture2D_5 (BGRA8, 512X512)
+[2017.07.22-21.26.53:865][647]LogTexture:Display: Building textures: Texture2D_6 (BGRA8, 512X512)
+[2017.07.22-21.26.53:873][647]LogTexture:Display: Building textures: Texture2D_7 (BGRA8, 512X512)
+[2017.07.22-21.26.53:882][647]LogTexture:Display: Building textures: Texture2D_8 (BGRA8, 512X512)
+[2017.07.22-21.26.53:890][647]LogTexture:Display: Building textures: Texture2D_9 (BGRA8, 512X512)
+[2017.07.22-21.26.53:899][647]LogTexture:Display: Building textures: Texture2D_10 (BGRA8, 512X512)
+[2017.07.22-21.26.53:907][647]LogTexture:Display: Building textures: Texture2D_11 (BGRA8, 512X512)
+[2017.07.22-21.26.53:916][647]LogTexture:Display: Building textures: Texture2D_12 (BGRA8, 512X512)
+[2017.07.22-21.26.53:925][647]LogTexture:Display: Building textures: Texture2D_13 (BGRA8, 512X512)
+[2017.07.22-21.26.53:934][647]LogTexture:Display: Building textures: Texture2D_14 (BGRA8, 512X512)
+[2017.07.22-21.26.53:942][647]LogTexture:Display: Building textures: Texture2D_15 (BGRA8, 512X512)
+[2017.07.22-21.26.53:951][647]LogMaterial: Missing cached shader map for material WorldGridMaterial, compiling. Is special engine material.
+[2017.07.22-21.27.04:368][257]Cmd: TRANSACTION UNDO
+[2017.07.22-21.27.04:368][257]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2017.07.22-21.27.06:777][503]Cmd: TRANSACTION UNDO
+[2017.07.22-21.27.06:777][503]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2017.07.22-21.27.11:758][ 50]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2017.07.22-21.27.13:022][195]Cmd: DELETE
+[2017.07.22-21.27.13:022][195]Cmd: ACTOR DELETE
+[2017.07.22-21.27.13:023][195]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.07.22-21.27.13:032][195]LogEditorActor: Deleted 1 Actors (0.011 secs)
+[2017.07.22-21.27.13:913][299]LogEditorViewport: Clicking on Actor (LMB): SphereReflectionCapture (SphereReflectionCapture)
+[2017.07.22-21.27.17:206][686]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
+[2017.07.22-21.27.18:796][823]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (NetworkPlayerStart)
+[2017.07.22-21.27.21:506][140]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Scale_Dude)
+[2017.07.22-21.27.22:665][275]LogEditorViewport: Clicking on Actor (LMB): SphereReflectionCapture (SphereReflectionCapture)
+[2017.07.22-21.27.23:346][352]LogEditorViewport: Clicking on Actor (LMB): DirectionalLight (Light Source)
+[2017.07.22-21.27.28:646][972]LogActorFactory: Actor Factory created Cylinder
+[2017.07.22-21.27.29:370][ 50]LogActorFactory: Actor Factory created Cylinder
+[2017.07.22-21.27.51:011][242]LogSlate: Took 0.031467 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.07.22-21.28.21:876][643]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape)
+[2017.07.22-21.28.24:459][932]Cmd: DELETE
+[2017.07.22-21.28.24:459][932]Cmd: ACTOR DELETE
+[2017.07.22-21.28.24:461][932]LogEditorActor: Deleted Actor: Landscape
+[2017.07.22-21.28.24:569][932]LogEditorActor: Deleted 1 Actors (0.110 secs)
+[2017.07.22-21.28.34:353][ 77]LogTexture:Display: Building textures: Texture2D_16 (BGRA8, 512X512)
+[2017.07.22-21.28.34:365][ 77]LogTexture:Display: Building textures: Texture2D_17 (BGRA8, 512X512)
+[2017.07.22-21.28.34:376][ 77]LogTexture:Display: Building textures: Texture2D_18 (BGRA8, 512X512)
+[2017.07.22-21.28.34:386][ 77]LogTexture:Display: Building textures: Texture2D_19 (BGRA8, 512X512)
+[2017.07.22-21.28.54:559][429]Cmd: SELECT NONE
+[2017.07.22-21.28.58:803][932]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cylinder)
+[2017.07.22-21.29.20:395][480]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape1)
+[2017.07.22-21.29.23:359][823]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2017.07.22-21.29.29:024][170]Cmd: TRANSACTION UNDO
+[2017.07.22-21.29.29:024][170]LogEditorTransaction: Undo Move Actors
+[2017.07.22-21.29.29:894][183]Cmd: TRANSACTION UNDO
+[2017.07.22-21.29.29:894][183]LogEditorTransaction: Undo Clicking on Actors
+[2017.07.22-21.29.37:590][ 49]Cmd: ACTOR HIDE SELECTED
+[2017.07.22-21.29.50:340][517]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2017.07.22-21.29.52:263][699]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2017.07.22-21.29.52:953][776]LogEditorViewport: Clicking Background
+[2017.07.22-21.29.53:670][858]Cmd: ACTOR HIDE SELECTED
+[2017.07.22-21.29.55:808][113]Cmd: ACTOR UNHIDE ALL
+[2017.07.22-21.29.57:480][311]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape1)
+[2017.07.22-21.30.01:516][778]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape1)
+[2017.07.22-21.30.37:534][834]Cmd: TRANSACTION UNDO
+[2017.07.22-21.30.37:534][834]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2017.07.22-21.30.45:319][699]Cmd: TRANSACTION UNDO
+[2017.07.22-21.30.45:319][699]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2017.07.22-21.30.47:703][952]Cmd: TRANSACTION UNDO
+[2017.07.22-21.30.47:703][952]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2017.07.22-21.30.54:262][702]Cmd: TRANSACTION UNDO
+[2017.07.22-21.30.54:262][702]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2017.07.22-21.30.57:046][ 13]Cmd: POLY SELECT ADJACENT WALLS
+[2017.07.22-21.31.19:121][516]Cmd: TRANSACTION UNDO
+[2017.07.22-21.31.19:121][516]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2017.07.22-21.31.19:150][516]LogTexture:Display: Building textures: Texture2D_19 (BGRA8, 512X512)
+[2017.07.22-21.31.21:086][729]LogEditorViewport: Clicking on Actor (context menu): Landscape (Landscape1)
+[2017.07.22-21.31.24:829][135]Cmd: TRANSACTION UNDO
+[2017.07.22-21.31.24:829][135]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2017.07.22-21.31.24:858][135]LogTexture:Display: Building textures: Texture2D_19 (BGRA8, 512X512)
+[2017.07.22-21.31.31:995][956]Cmd: TRANSACTION UNDO
+[2017.07.22-21.31.31:995][956]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2017.07.22-21.31.40:307][892]Cmd: TRANSACTION UNDO
+[2017.07.22-21.31.40:307][892]LogEditorTransaction: Undo Landscape Editing: Sculpt
+[2017.07.22-21.32.23:048][757]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.32.23:093][757]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.32.23:155][757]LogSlate: Took 0.020673 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.07.22-21.32.23:951][801]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.32.23:951][801]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.32.23:951][801]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.33.20:876][248]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.33.20:916][248]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.33.20:925][248]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.33.21:849][318]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.33.21:849][318]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.33.21:849][318]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.33.50:269][224]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.33.51:233][314]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.33.51:233][314]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.33.51:233][314]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.33.52:328][419]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.33.52:965][475]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.33.52:965][475]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.33.52:965][475]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.33.55:742][729]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.33.55:818][730]LogMaterial: Missing cached shader map for material Material_0, compiling. 
+[2017.07.22-21.33.56:383][775]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.33.56:383][775]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.33.56:383][775]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.33.58:878][ 17]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.33.59:613][ 75]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.33.59:613][ 75]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.33.59:613][ 75]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.34.10:281][145]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.34.10:289][145]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.34.10:985][203]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.34.10:985][203]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.34.10:985][203]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.34.12:585][376]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.34.12:597][376]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.34.13:304][437]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.34.13:304][437]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.34.13:304][437]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.34.19:391][995]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.34.19:403][995]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.34.20:113][ 63]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.34.20:113][ 63]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.34.20:113][ 63]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.34.30:708][156]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.34.30:721][156]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.34.31:476][224]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.34.31:476][224]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.34.31:476][224]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.34.34:275][493]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.34.34:286][493]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.34.34:311][493]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_1, compiling. 
+[2017.07.22-21.34.35:074][553]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.34.35:074][553]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.34.35:074][553]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.34.38:720][943]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.34.38:730][943]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_1, compiling. 
+[2017.07.22-21.34.39:445][992]MaterialEditorStats: Info Base pass shader: 84 instructions
+[2017.07.22-21.34.39:445][992]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.34.39:445][992]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.34.40:379][ 75]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.34.41:025][134]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.34.41:025][134]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.34.41:025][134]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.34.41:132][145]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.34.44:215][498]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.34.44:865][557]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.34.44:865][557]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.34.44:865][557]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.34.45:739][651]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.34.46:425][712]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.34.46:425][712]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.34.46:425][712]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.34.50:724][133]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.34.51:376][179]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.34.51:376][179]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.34.51:376][179]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.34.54:116][468]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.34.54:749][528]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.34.54:749][528]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.34.54:749][528]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.34.58:457][892]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.34.59:200][966]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.34.59:200][966]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.34.59:200][966]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.35.01:289][162]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-21.35.01:694][162]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2017.07.22-21.35.01:728][162]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.35.01:745][162]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.35.01:822][162]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-21.35.02:200][162]TextureStreamingBuild:Display: Compiling optional shaders took 0.382 seconds.
+[2017.07.22-21.35.03:415][248]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.35.03:415][248]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.35.03:415][248]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.35.08:657][773]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/M_LandScape" FILE="../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Materials/M_LandScape.uasset" SILENT=true
+[2017.07.22-21.35.08:666][773]LogSavePackage: Save=8.48ms
+[2017.07.22-21.35.08:666][773]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/M_LandScape665D1E7B48E523F56E137BBF0FD6EE64.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Materials/M_LandScape.uasset'
+[2017.07.22-21.35.08:668][773]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Materials/M_LandScape.uasset
+[2017.07.22-21.35.19:182][941]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape1)
+[2017.07.22-21.35.23:647][439]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.35.30:598][159]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.35.30:648][159]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.35.30:657][159]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.35.30:688][159]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.35.31:367][195]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.35.31:367][195]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.35.31:367][195]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.35.39:726][891]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.35.39:740][891]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.35.40:396][935]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.35.40:396][935]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.35.40:396][935]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.35.41:206][  1]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-21.35.41:601][  1]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.35.41:631][  1]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.35.41:647][  1]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.35.41:671][  1]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.35.41:736][  1]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-21.35.42:115][  1]TextureStreamingBuild:Display: Compiling optional shaders took 0.383 seconds.
+[2017.07.22-21.35.43:897][101]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.35.43:897][101]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.35.43:897][101]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.35.48:889][560]LogEditorViewport: Clicking on Actor (LMB): ThirdPersonCharacter_C (ThirdPersonCharacter)
+[2017.07.22-21.35.51:110][732]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Scale_Dude)
+[2017.07.22-21.35.56:319][247]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape1)
+[2017.07.22-21.36.19:025][308]LogSlate: Took 0.000140 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.07.22-21.36.19:036][308]LogSavePackage: Save=2670.40ms
+[2017.07.22-21.36.19:036][308]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/ThirdPersonExampleMapE39C2B7543F1B795A6B41BA010C1FAA9.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2017.07.22-21.36.19:076][308]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2017.07.22-21.36.19:384][308]LogSavePackage: Save=167.32ms
+[2017.07.22-21.36.19:384][308]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/ThirdPersonExampleMap_BuiltData39F22C284A90B58A3FE5F3B66C9B2539.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap_BuiltData.uasset'
+[2017.07.22-21.36.19:385][308]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap_BuiltData.uasset
+[2017.07.22-21.39.19:860][606]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Source/Textures/Temp/UV_Grid_Lrg.jpg)
+[2017.07.22-21.39.19:879][606]LogTexture:Display: Building textures: UV_Grid_Lrg (AutoDXT, 1024X1024)
+[2017.07.22-21.39.23:220][950]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/Temp/UV_Grid_Lrg" FILE="../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Textures/Temp/UV_Grid_Lrg.uasset" SILENT=true
+[2017.07.22-21.39.23:252][950]LogSavePackage: Save=30.13ms
+[2017.07.22-21.39.23:252][950]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/UV_Grid_Lrg531A751E4269DA84AB25F599112D3F64.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Textures/Temp/UV_Grid_Lrg.uasset'
+[2017.07.22-21.39.23:254][950]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Textures/Temp/UV_Grid_Lrg.uasset
+[2017.07.22-21.39.26:847][227]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (SkySphereBlueprint)
+[2017.07.22-21.39.32:045][720]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.39.32:100][720]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.39.32:109][720]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.39.32:141][720]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.39.33:010][781]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.39.33:010][781]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.39.33:010][781]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.39.44:778][705]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.39.44:786][705]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.07.22-21.39.44:815][705]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.39.44:818][705]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.07.22-21.39.45:931][797]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.39.45:931][797]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.39.45:931][797]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.39.49:316][122]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.39.49:943][158]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.39.49:943][158]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.39.49:943][158]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.39.53:551][470]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.39.53:562][470]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.39.54:214][509]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.39.54:214][509]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.39.54:214][509]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.39.55:554][649]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.39.55:566][649]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.07.22-21.39.56:194][685]MaterialEditorStats: Info Base pass shader: 79 instructions
+[2017.07.22-21.39.56:194][685]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.39.56:194][685]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.39.57:193][793]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.39.58:461][914]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-21.39.58:461][914]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.39.58:461][914]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.39.58:461][914]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.40.00:263][ 77]LogMaterialEditor: Saving and Compiling material M_LandScape
+[2017.07.22-21.40.00:657][ 77]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.40.00:687][ 77]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.40.00:706][ 77]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.40.00:734][ 77]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.40.00:798][ 77]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-21.40.01:230][ 77]TextureStreamingBuild:Display: Compiling optional shaders took 0.435 seconds.
+[2017.07.22-21.40.02:536][ 77]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/M_LandScape" FILE="../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Materials/M_LandScape.uasset" SILENT=true
+[2017.07.22-21.40.02:572][ 77]LogSavePackage: Save=32.78ms
+[2017.07.22-21.40.02:572][ 77]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/M_LandScapeA9E9CF94401413DA6BA650BBB3AF4F75.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Materials/M_LandScape.uasset'
+[2017.07.22-21.40.02:575][ 77]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Materials/M_LandScape.uasset
+[2017.07.22-21.40.02:583][ 77]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-21.40.02:583][ 77]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.40.02:583][ 77]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.07.22-21.40.02:583][ 77]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.40.08:398][678]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.40.08:401][678]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.07.22-21.40.31:797][965]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.40.31:809][965]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.40.33:390][114]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.40.33:403][114]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.40.34:144][157]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-21.40.34:144][157]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.40.34:144][157]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.40.34:144][157]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.40.35:617][292]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-21.40.36:034][292]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.40.36:064][292]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.40.36:080][292]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.40.36:105][292]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.40.36:165][292]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-21.40.36:593][292]TextureStreamingBuild:Display: Compiling optional shaders took 0.432 seconds.
+[2017.07.22-21.40.38:385][425]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-21.40.38:385][425]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.40.38:385][425]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.07.22-21.40.38:385][425]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.41.00:157][331]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.41.00:166][331]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0, compiling. 
+[2017.07.22-21.41.01:026][396]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-21.41.01:026][396]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.41.01:026][396]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.41.01:026][396]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.41.03:871][677]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.41.03:886][677]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.07.22-21.41.03:915][677]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0, compiling. 
+[2017.07.22-21.41.04:566][728]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-21.41.04:566][728]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.41.04:566][728]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.41.04:566][728]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.42.16:880][854]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.42.16:889][854]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0, compiling. 
+[2017.07.22-21.42.17:887][935]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-21.42.17:887][935]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.42.17:887][935]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.42.17:887][935]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.42.19:304][ 68]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-21.42.19:706][ 68]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.42.19:737][ 68]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.42.19:756][ 68]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.42.19:780][ 68]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.42.19:841][ 68]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-21.42.20:276][ 68]TextureStreamingBuild:Display: Compiling optional shaders took 0.440 seconds.
+[2017.07.22-21.42.21:956][175]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-21.42.21:956][175]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.42.21:956][175]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.07.22-21.42.21:956][175]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.42.29:382][780]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.42.29:393][780]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0, compiling. 
+[2017.07.22-21.42.30:143][838]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-21.42.30:143][838]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.42.30:143][838]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.42.30:143][838]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.42.32:589][ 71]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-21.42.32:976][ 71]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.42.33:009][ 71]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.42.33:030][ 71]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.42.33:053][ 71]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.42.33:114][ 71]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-21.42.33:597][ 71]TextureStreamingBuild:Display: Compiling optional shaders took 0.488 seconds.
+[2017.07.22-21.42.35:230][196]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-21.42.35:230][196]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.42.35:230][196]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.07.22-21.42.35:230][196]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.42.45:936][202]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.42.45:948][202]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0, compiling. 
+[2017.07.22-21.42.46:622][255]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-21.42.46:622][255]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.42.46:622][255]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.42.46:622][255]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.42.48:268][403]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-21.42.48:657][403]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.42.48:688][403]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.42.48:706][403]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.42.48:732][403]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.42.48:796][403]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-21.42.49:257][403]TextureStreamingBuild:Display: Compiling optional shaders took 0.468 seconds.
+[2017.07.22-21.42.50:930][532]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-21.42.50:930][532]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.42.50:930][532]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.07.22-21.42.50:930][532]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.42.57:576][145]LogActorFactory: Actor Factory created Cube
+[2017.07.22-21.42.59:544][357]LogActorFactory: Actor Factory created Cube
+[2017.07.22-21.43.01:028][507]Cmd: DELETE
+[2017.07.22-21.43.01:028][507]Cmd: ACTOR DELETE
+[2017.07.22-21.43.01:030][507]LogEditorActor: Deleted Actor: StaticMeshActor
+[2017.07.22-21.43.01:038][507]LogEditorActor: Deleted 1 Actors (0.010 secs)
+[2017.07.22-21.43.14:778][890]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.43.15:829][980]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-21.43.15:829][980]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.43.15:829][980]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.43.15:829][980]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.43.22:478][581]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.43.23:157][635]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-21.43.23:157][635]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.43.23:157][635]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.43.23:157][635]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.43.23:857][701]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.43.24:522][757]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-21.43.24:522][757]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.43.24:522][757]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.43.24:522][757]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.43.27:512][ 16]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.43.27:512][ 16]LogMaterial:Warning: Failed to compile Material /Engine/Transient.PreviewMaterial_1 for platform PCD3D_SM5, Default Material will be used in game.
+[2017.07.22-21.43.27:512][ 16]LogMaterial:Warning: 	Grass> Input missing
+[2017.07.22-21.43.27:514][ 16]MaterialEditorStats:Error: Error [SM5] Grass> Input missing
+[2017.07.22-21.43.29:786][206]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.43.30:464][264]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-21.43.30:464][264]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.43.30:464][264]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.43.30:464][264]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.43.53:296][883]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.43.54:208][951]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-21.43.54:208][951]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.43.54:208][951]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.43.54:208][951]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.44.02:779][662]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.44.03:455][703]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-21.44.03:455][703]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.44.03:455][703]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.44.03:455][703]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.44.11:106][482]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.44.11:843][538]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-21.44.11:843][538]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.44.11:843][538]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.44.11:843][538]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.44.13:454][709]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.44.14:145][774]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.44.14:145][774]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.44.14:145][774]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.44.16:693][  1]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.44.17:345][ 47]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.44.17:345][ 47]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.44.17:345][ 47]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.44.26:011][899]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.44.26:635][954]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.44.26:635][954]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.44.26:635][954]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.44.30:997][420]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionLandscapeLayerCoords'MaterialGraphNode_14.MaterialExpressionLandscapeLayerCoords_0')'
+[2017.07.22-21.44.30:997][420]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionConstant3Vector'MaterialGraphNode_9.MaterialExpressionConstant3Vector_0')'
+[2017.07.22-21.44.30:997][420]LogProperty:Warning: ObjectProperty /Script/Engine.ExpressionInput:Expression: unresolved reference to 'MaterialExpressionTextureSample'MaterialGraphNode_12.MaterialExpressionTextureSample_0',Mask=1,MaskR=1,MaskG=1,MaskB=1)'
+[2017.07.22-21.44.31:002][420]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.44.31:090][420]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.44.31:094][420]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.07.22-21.44.31:099][420]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0, compiling. 
+[2017.07.22-21.44.31:103][420]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.07.22-21.44.31:106][420]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.07.22-21.44.31:111][420]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_1, compiling. 
+[2017.07.22-21.44.31:755][462]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.44.31:755][462]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.44.31:755][462]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.44.37:267][ 36]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.44.37:279][ 36]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.07.22-21.44.37:308][ 36]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.07.22-21.44.37:338][ 36]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_1, compiling. 
+[2017.07.22-21.44.38:505][153]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.44.38:505][153]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.44.38:505][153]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.44.42:656][532]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.44.42:670][532]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.07.22-21.44.43:318][570]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.44.43:318][570]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.44.43:318][570]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.44.44:121][663]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.44.44:135][663]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.07.22-21.44.44:975][736]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.44.44:985][736]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.07.22-21.44.45:682][775]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.44.45:682][775]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.44.45:682][775]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.44.52:570][479]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.44.52:605][479]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.07.22-21.44.53:861][596]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.44.53:861][596]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.44.53:861][596]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.44.56:439][860]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.44.56:451][860]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0, compiling. 
+[2017.07.22-21.44.56:480][860]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.07.22-21.44.57:617][974]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.44.57:617][974]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.44.57:617][974]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.45.11:150][270]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-21.45.11:543][270]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.45.11:577][270]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.45.11:593][270]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.45.11:617][270]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.45.11:680][270]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-21.45.12:072][270]TextureStreamingBuild:Display: Compiling optional shaders took 0.397 seconds.
+[2017.07.22-21.45.13:894][404]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.45.13:894][404]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.45.13:894][404]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.46.08:432][444]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.46.09:305][513]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.46.09:305][513]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.46.09:305][513]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.46.43:190][ 46]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.46.44:123][112]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.46.44:123][112]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.46.44:123][112]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.46.46:030][148]LogSavePackage: Save=1405.15ms
+[2017.07.22-21.46.46:030][148]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/ThirdPersonExampleMap_Auto180EA386F4C49BA29472F4BBF8A39AAF7.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/Autosaves/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap_Auto1.umap'
+[2017.07.22-21.46.46:031][148]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/Autosaves/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap_Auto1.umap
+[2017.07.22-21.46.46:033][148]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap' took 1.459
+[2017.07.22-21.46.46:033][148]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.459
+[2017.07.22-21.46.46:036][148]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Materials/M_LandScape] ([1] browsable assets)...
+[2017.07.22-21.46.46:045][148]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Materials/M_LandScape.M_LandScape]
+[2017.07.22-21.46.46:045][148]OBJ SavePackage: Finished generating thumbnails for package [/Game/Materials/M_LandScape]
+[2017.07.22-21.46.46:058][148]LogSavePackage: Save=9.87ms
+[2017.07.22-21.46.46:058][148]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/M_LandScape_Auto12C28B5D0404C7E76B5FF3F819EE764F4.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/Autosaves/Game/Materials/M_LandScape_Auto1.uasset'
+[2017.07.22-21.46.46:059][148]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/Autosaves/Game/Materials/M_LandScape_Auto1.uasset
+[2017.07.22-21.46.46:059][148]LogFileHelpers: Auto-saving content packages took 0.024
+[2017.07.22-21.49.37:948][485]LogActorComponent: UnregisterComponent: (/Engine/Transient.SphereBrushComponent) Not registered. Aborting.
+[2017.07.22-21.49.42:602][976]LogMaterialEditor: Saving and Compiling material M_LandScape
+[2017.07.22-21.49.43:000][976]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.49.43:036][976]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.49.43:053][976]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.49.43:071][976]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.49.43:115][976]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-21.49.43:761][976]TextureStreamingBuild:Display: Compiling optional shaders took 0.650 seconds.
+[2017.07.22-21.49.45:006][976]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/M_LandScape" FILE="../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Materials/M_LandScape.uasset" SILENT=true
+[2017.07.22-21.49.45:021][976]LogSavePackage: Save=13.25ms
+[2017.07.22-21.49.45:021][976]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/M_LandScapeEB777F204B780473497BBB8BACFF36C8.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Materials/M_LandScape.uasset'
+[2017.07.22-21.49.45:024][976]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Materials/M_LandScape.uasset
+[2017.07.22-21.49.45:030][976]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.49.45:030][976]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.49.45:030][976]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.51.43:731][620]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.51.43:742][620]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.51.44:620][689]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.51.44:620][689]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.51.44:620][689]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.51.47:294][982]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.51.47:310][982]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.07.22-21.51.48:027][ 32]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.51.48:027][ 32]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.51.48:027][ 32]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.51.50:115][256]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-21.51.50:505][256]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.51.50:541][256]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.51.50:563][256]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.51.50:588][256]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.51.50:645][256]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-21.51.51:176][256]TextureStreamingBuild:Display: Compiling optional shaders took 0.536 seconds.
+[2017.07.22-21.51.53:202][397]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.51.53:202][397]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.51.53:202][397]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.54.04:528][387]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.54.05:382][457]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.54.05:382][457]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.54.05:382][457]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.54.10:011][964]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.54.10:640][ 13]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.54.10:640][ 13]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.54.10:640][ 13]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.54.11:654][131]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.54.12:907][260]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.54.12:907][260]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.54.12:907][260]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.54.23:240][406]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.54.23:991][461]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-21.54.23:991][461]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.54.23:991][461]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.54.23:991][461]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.54.25:485][623]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-21.54.25:878][623]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.54.25:913][623]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.54.25:932][623]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.54.25:957][623]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.54.26:018][623]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-21.54.26:469][623]TextureStreamingBuild:Display: Compiling optional shaders took 0.456 seconds.
+[2017.07.22-21.54.28:157][737]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-21.54.28:157][737]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.54.28:157][737]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.07.22-21.54.28:157][737]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.54.38:407][791]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.54.39:051][841]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.54.39:051][841]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.54.39:051][841]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.54.41:106][ 42]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-21.54.41:495][ 42]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.54.41:532][ 42]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.54.41:551][ 42]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.54.41:578][ 42]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.54.41:641][ 42]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-21.54.42:047][ 42]TextureStreamingBuild:Display: Compiling optional shaders took 0.411 seconds.
+[2017.07.22-21.54.43:755][ 48]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.54.43:755][ 48]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.54.43:755][ 48]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.56.46:854][417]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap' took 0.018
+[2017.07.22-21.56.46:857][417]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Materials/M_LandScape] ([1] browsable assets)...
+[2017.07.22-21.56.46:893][417]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Materials/M_LandScape.M_LandScape]
+[2017.07.22-21.56.46:893][417]OBJ SavePackage: Finished generating thumbnails for package [/Game/Materials/M_LandScape]
+[2017.07.22-21.56.46:941][417]LogSavePackage: Save=44.11ms
+[2017.07.22-21.56.46:941][417]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/M_LandScape_Auto2F0994CEB467810E83C7C369BFE7C2ED7.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/Autosaves/Game/Materials/M_LandScape_Auto2.uasset'
+[2017.07.22-21.56.46:944][417]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/Autosaves/Game/Materials/M_LandScape_Auto2.uasset
+[2017.07.22-21.56.46:944][417]LogFileHelpers: Auto-saving content packages took 0.090
+[2017.07.22-21.56.57:813][123]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.56.58:657][193]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.56.58:657][193]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-21.56.58:657][193]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.57.03:436][717]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.57.03:447][717]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.07.22-21.57.04:146][766]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-21.57.04:146][766]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.57.04:146][766]MaterialEditorStats: Info Texture samplers: 1/16
+[2017.07.22-21.57.04:146][766]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.57.17:057][141]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.57.17:743][189]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-21.57.17:743][189]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.57.17:743][189]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.57.17:743][189]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.57.22:655][713]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.57.23:303][762]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-21.57.23:303][762]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.57.23:303][762]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.57.23:303][762]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.57.25:921][ 58]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.57.26:578][109]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-21.57.26:578][109]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.57.26:578][109]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.57.26:578][109]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.57.28:262][290]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-21.57.28:654][290]LogMaterial: Missing cached shader map for material PreviewMaterial_1, compiling. 
+[2017.07.22-21.57.28:685][290]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.57.28:704][290]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.57.28:728][290]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.57.28:789][290]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-21.57.29:233][290]TextureStreamingBuild:Display: Compiling optional shaders took 0.450 seconds.
+[2017.07.22-21.57.30:908][410]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-21.57.30:908][410]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.57.30:908][410]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.07.22-21.57.30:908][410]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-21.58.03:128][714]LogMaterialEditor: Saving and Compiling material M_LandScape
+[2017.07.22-21.58.03:212][714]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/M_LandScape" FILE="../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Materials/M_LandScape.uasset" SILENT=true
+[2017.07.22-21.58.03:225][714]LogSavePackage: Save=11.26ms
+[2017.07.22-21.58.03:225][714]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/M_LandScape0D9F66A7497186BCFAD8F999F7CF17A2.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Materials/M_LandScape.uasset'
+[2017.07.22-21.58.03:227][714]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Materials/M_LandScape.uasset
+[2017.07.22-21.59.20:411][429]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.59.20:421][429]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.59.20:458][429]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.59.27:816][ 87]LogSavePackage: Save=1416.43ms
+[2017.07.22-21.59.27:816][ 87]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/ThirdPersonExampleMapBD241761475D404E67CF58A314FCFDCA.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2017.07.22-21.59.27:819][ 87]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2017.07.22-21.59.28:011][ 87]LogSavePackage: Save=111.10ms
+[2017.07.22-21.59.28:011][ 87]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/ThirdPersonExampleMap_BuiltDataFF7AED8047DA5BEC19E2E4A15F41CE83.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap_BuiltData.uasset'
+[2017.07.22-21.59.28:012][ 87]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap_BuiltData.uasset
+[2017.07.22-21.59.30:237][327]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.59.30:295][327]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.59.30:304][327]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-21.59.30:338][327]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-21.59.30:341][327]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.07.22-21.59.30:345][327]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0, compiling. 
+[2017.07.22-21.59.30:348][327]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.07.22-21.59.30:351][327]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.07.22-21.59.31:026][369]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-21.59.31:026][369]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-21.59.31:026][369]MaterialEditorStats: Info Texture samplers: 2/16
+[2017.07.22-21.59.31:026][369]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.04.31:561][704]LogEditorActor: Deleted Actor: Landscape
+[2017.07.22-22.04.31:663][704]LogEditorActor: Deleted 1 Actors (0.103 secs)
+[2017.07.22-22.04.33:220][885]LogTexture:Display: Building textures: Texture2D_3 (G8, 128X128)
+[2017.07.22-22.04.43:546][ 58]LogTexture:Display: Building textures: Texture2D_20 (BGRA8, 256X256)
+[2017.07.22-22.05.07:892][479]MapCheck: New page: Map Check
+[2017.07.22-22.05.07:903][479]Cmd: MAP REBUILD ALLVISIBLE
+[2017.07.22-22.05.07:908][479]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.07.22-22.05.08:116][479]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy WorldGridMaterial, compiling. Is special engine material.
+[2017.07.22-22.05.08:120][479]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MaterialInstanceDynamic_46, compiling. 
+[2017.07.22-22.05.08:125][479]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy lambert1, compiling. 
+[2017.07.22-22.05.08:129][479]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy BasicShapeMaterial, compiling. 
+[2017.07.22-22.05.08:139][479]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_UE4Man_Body, compiling. 
+[2017.07.22-22.05.08:148][479]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_UE4Man_ChestLogo, compiling. 
+[2017.07.22-22.05.08:155][479]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy MatineeCam_mat, compiling. 
+[2017.07.22-22.05.08:159][479]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy LandscapeGizmo_Mat, compiling. 
+[2017.07.22-22.05.08:623][479]TextureStreamingBuild:Display: Compiling optional shaders took 0.517 seconds.
+[2017.07.22-22.05.08:640][479]LogLevel:Display: Export Material TexCoord Scales took 0.017 seconds.
+[2017.07.22-22.05.08:643][479]TextureStreamingBuild:Display: Build Texture Streaming took 0.003 seconds.
+[2017.07.22-22.05.08:650][479]LightingResults: New page: Lighting Build - Jul 22, 2017, 8:05:08 AM
+[2017.07.22-22.05.08:967][479]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.07.22-22.05.09:348][479]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.07.22-22.05.09:372][479]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.07.22-22.05.09:890][479]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.07.22-22.05.09:890][479]LogSwarmInterface: [TryOpenConnection] Local Process ID is 27784
+[2017.07.22-22.05.12:491][479]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.07.22-22.05.12:491][479]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.07.22-22.05.12:491][479]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.07.22-22.05.12:491][479]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.07.22-22.05.12:491][479]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.07.22-22.05.12:710][479]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2017.07.22-22.05.12:711][479]MapCheck: New page: ThirdPersonExampleMap - Jul 22, 2017, 8:05:12 AM
+[2017.07.22-22.05.12:711][479]MapCheck:Error: Error WorldInfo_0 Maps need lighting rebuilt 
+[2017.07.22-22.05.12:763][479]MapCheck: Info Map check complete: 1 Error(s), 0 Warning(s), took 52.719ms to complete.
+[2017.07.22-22.05.12:785][479]LogEditorBuildUtils: Build time 0:04
+[2017.07.22-22.05.12:810][479]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer MaterialInstanceDynamic_46, compiling. 
+[2017.07.22-22.05.12:813][479]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer MaterialInstanceDynamic_46, compiling. 
+[2017.07.22-22.05.12:818][479]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer lambert1, compiling. 
+[2017.07.22-22.05.12:824][479]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer lambert1, compiling. 
+[2017.07.22-22.05.12:914][480]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer BasicShapeMaterial, compiling. 
+[2017.07.22-22.05.12:921][480]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer BasicShapeMaterial, compiling. 
+[2017.07.22-22.05.12:986][481]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_2054, compiling. 
+[2017.07.22-22.05.12:992][481]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer LandscapeMaterialInstanceConstant_2054, compiling. 
+[2017.07.22-22.05.22:146][968]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer WorldGridMaterial, compiling. Is special engine material.
+[2017.07.22-22.05.22:152][968]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer WorldGridMaterial, compiling. Is special engine material.
+[2017.07.22-22.05.50:220][590]Job is a success!
+[2017.07.22-22.05.50:389][591]LogMaterial:Warning: Material /Game/Geometry/lambert1.lambert1 needed to have new flag set bUsedWithStaticLighting !
+[2017.07.22-22.05.50:391][591]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2017.07.22-22.05.50:417][591]LogMaterial:Warning: Material /Game/Materials/M_LandScape.M_LandScape needed to have new flag set bUsedWithStaticLighting !
+[2017.07.22-22.05.50:421][591]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.05.50:465][591]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.05.50:825][591]LogTexture:Display: Building textures: SkyOcclusion1_1 (AutoDXT, 512X256)
+[2017.07.22-22.05.50:825][591]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 512X512)
+[2017.07.22-22.05.50:825][591]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (DXT1, 512X512)
+[2017.07.22-22.05.50:825][591]LogTexture:Display: Building textures: SkyOcclusion1_2 (AutoDXT, 1024X512)
+[2017.07.22-22.05.50:825][591]LogTexture:Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 1024X1024)
+[2017.07.22-22.05.50:825][591]LogTexture:Display: Building textures: LQ_Lightmap_1_2 (DXT1, 1024X1024)
+[2017.07.22-22.05.50:896][591]LogTexture:Display: Building textures: ShadowMapTexture2D_2 (G8, 1024X256)
+[2017.07.22-22.05.50:923][591]Lightmass on DESKTOP-DB8G6DD: 5.95 sec total, 1.03 sec importing, 195 ms setup, 377 ms photons, 4.31 sec processing, 0 ms extra exporting [1027/1027 mappings]. Threads: 30.0 sec total, 20.6 sec processing.
+[2017.07.22-22.05.50:972][591]LogStaticLightingSystem: Illumination: 42.2 sec (293 ms encoding lightmaps, 68 ms encoding shadowmaps)
+[2017.07.22-22.05.50:972][591]LogStaticLightingSystem: Lightmap texture memory:  3.3 MB (3.3 MB streaming, 0.0 MB non-streaming), 4 textures
+[2017.07.22-22.05.50:972][591]LogStaticLightingSystem: Shadowmap texture memory: 0.3 MB (0.3 MB streaming, 0.0 MB non-streaming), 1 textures
+[2017.07.22-22.05.51:498][591]DumpUnbuiltLightIteractions
+[2017.07.22-22.05.51:498][591]Lights with unbuilt interactions: 0
+[2017.07.22-22.05.51:498][591]
+[2017.07.22-22.05.51:498][591]Primitives with unbuilt interactions: 0
+[2017.07.22-22.05.51:505][592]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.07.22-22.05.51:505][592]MapCheck: New page: ThirdPersonExampleMap - Jul 22, 2017, 8:05:51 AM
+[2017.07.22-22.05.51:586][592]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 80.272ms to complete.
+[2017.07.22-22.05.54:070][751]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.05.54:082][751]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.05.54:117][751]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.04:990][996]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.05:040][996]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.05:051][996]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.05:085][996]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-22.06.05:089][996]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.07.22-22.06.05:093][996]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_0, compiling. 
+[2017.07.22-22.06.05:097][996]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.07.22-22.06.05:102][996]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.07.22-22.06.05:925][ 46]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.06.05:925][ 46]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.06.05:925][ 46]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.06.05:925][ 46]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.06.12:250][721]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.13:058][788]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.06.13:058][788]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.06.13:058][788]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.06.13:058][788]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.06.26:063][276]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.26:127][277]LogMaterial: Missing cached shader map for material Material_1, compiling. 
+[2017.07.22-22.06.26:885][334]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.06.26:885][334]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.06.26:885][334]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.06.26:885][334]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.06.29:177][577]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.29:192][577]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.07.22-22.06.30:075][640]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.06.30:075][640]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.06.30:075][640]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.06.30:075][640]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.06.31:221][771]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.31:234][771]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.07.22-22.06.32:126][835]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.06.32:126][835]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.06.32:126][835]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.06.32:126][835]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.06.33:404][974]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.34:280][ 40]MaterialEditorStats: Info Base pass shader: 83 instructions
+[2017.07.22-22.06.34:280][ 40]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.06.34:280][ 40]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.06.34:280][ 40]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.06.35:576][176]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-22.06.35:979][176]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.36:013][176]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.36:044][176]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.36:076][176]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.36:110][176]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.36:117][176]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.36:162][176]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-22.06.36:640][176]TextureStreamingBuild:Display: Compiling optional shaders took 0.484 seconds.
+[2017.07.22-22.06.38:757][319]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.38:849][320]MaterialEditorStats: Info Base pass shader: 83 instructions
+[2017.07.22-22.06.38:849][320]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.06.38:849][320]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.06.38:849][320]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.06.47:055][ 77]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.48:512][213]MaterialEditorStats: Info Base pass shader: 83 instructions
+[2017.07.22-22.06.48:512][213]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.06.48:512][213]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.06.48:512][213]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.06.55:528][926]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.55:591][926]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.07.22-22.06.55:595][926]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.07.22-22.06.56:427][981]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.06.56:428][981]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.06.56:428][981]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.06.56:428][981]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.06.58:162][156]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-22.06.58:549][156]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.58:582][156]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.58:611][156]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.58:640][156]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.58:675][156]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.58:681][156]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.06.58:720][156]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-22.06.59:202][156]TextureStreamingBuild:Display: Compiling optional shaders took 0.487 seconds.
+[2017.07.22-22.07.01:242][288]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.01:335][289]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.07.01:335][289]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.07.01:335][289]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.07.01:335][289]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.07.10:629][174]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.10:645][174]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-22.07.11:428][228]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.07.11:428][228]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.07.11:428][228]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.07.11:428][228]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.07.12:395][318]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-22.07.12:783][318]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.12:816][318]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.12:844][318]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.12:872][318]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.12:916][318]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.12:924][318]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.12:967][318]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-22.07.13:443][318]TextureStreamingBuild:Display: Compiling optional shaders took 0.481 seconds.
+[2017.07.22-22.07.15:582][452]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.15:704][453]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.07.15:704][453]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.07.15:704][453]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.07.15:704][453]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.07.22:508][ 24]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.23:285][ 78]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.07.23:285][ 78]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.07.23:285][ 78]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.07.23:285][ 78]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.07.27:582][515]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.27:596][515]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-22.07.28:445][571]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.07.28:445][571]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.07.28:445][571]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.07.28:445][571]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.07.34:189][154]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.34:972][208]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.07.34:972][208]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.07.34:972][208]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.07.34:972][208]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.07.37:138][431]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-22.07.37:525][431]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.37:561][431]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.37:593][431]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.37:627][431]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.37:667][431]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.37:674][431]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.37:723][431]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-22.07.38:207][431]TextureStreamingBuild:Display: Compiling optional shaders took 0.489 seconds.
+[2017.07.22-22.07.40:265][561]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.40:331][561]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.40:396][562]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.07.40:396][562]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.07.40:396][562]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.07.40:396][562]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.07.54:822][898]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.07.55:600][956]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-22.07.55:600][956]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-22.07.55:600][956]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.07.22-22.08.00:824][481]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.01:591][538]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-22.08.01:591][538]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-22.08.01:591][538]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.07.22-22.08.02:476][623]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.03:192][675]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-22.08.03:192][675]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-22.08.03:192][675]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.07.22-22.08.07:304][117]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.08:091][171]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-22.08.08:091][171]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-22.08.08:091][171]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.07.22-22.08.12:946][689]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.13:733][745]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-22.08.13:733][745]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-22.08.13:733][745]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.07.22-22.08.21:935][596]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-22.08.22:323][596]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.22:360][596]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.22:389][596]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.22:425][596]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.22:459][596]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.22:466][596]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.22:508][596]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-22.08.22:907][596]TextureStreamingBuild:Display: Compiling optional shaders took 0.405 seconds.
+[2017.07.22-22.08.25:053][730]MaterialEditorStats: Info Base pass shader: 78 instructions
+[2017.07.22-22.08.25:053][730]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2017.07.22-22.08.25:053][730]MaterialEditorStats: Info Texture samplers: 3/16
+[2017.07.22-22.08.30:575][172]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.31:353][228]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-22.08.31:353][228]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.08.31:353][228]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.08.31:354][228]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.08.34:299][514]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.35:055][568]MaterialEditorStats: Info Base pass shader: 86 instructions
+[2017.07.22-22.08.35:055][568]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.08.35:055][568]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.08.35:055][568]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.08.36:362][701]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-22.08.36:783][701]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.36:815][701]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.36:840][701]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.36:870][701]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.36:908][701]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.36:914][701]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.36:954][701]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-22.08.37:434][701]TextureStreamingBuild:Display: Compiling optional shaders took 0.484 seconds.
+[2017.07.22-22.08.39:565][833]MaterialEditorStats: Info Base pass shader: 86 instructions
+[2017.07.22-22.08.39:565][833]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.08.39:565][833]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.08.39:565][833]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.08.52:498][ 36]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.08.53:266][ 92]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-22.08.53:266][ 92]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.08.53:266][ 92]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.08.53:266][ 92]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.09.00:863][893]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.09.01:658][950]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-22.09.01:658][950]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.09.01:658][950]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.09.01:658][950]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.09.02:955][ 86]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-22.09.03:343][ 86]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.09.03:376][ 86]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.09.03:406][ 86]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.09.03:437][ 86]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.09.03:474][ 86]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.09.03:520][ 86]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-22.09.04:043][ 86]TextureStreamingBuild:Display: Compiling optional shaders took 0.529 seconds.
+[2017.07.22-22.09.06:084][216]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.09.06:156][217]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-22.09.06:156][217]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.09.06:156][217]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.09.06:156][217]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.09.35:965][ 34]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.09.35:999][ 34]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.09.36:028][ 34]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.09.36:052][ 34]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.09.36:081][ 34]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.09.36:120][ 34]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-22.09.36:793][ 34]TextureStreamingBuild:Display: Compiling optional shaders took 0.678 seconds.
+[2017.07.22-22.09.38:990][231]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.10.15:989][511]LogEditorViewport: Clicking on Actor (LMB): Landscape (Landscape2)
+[2017.07.22-22.10.32:956][373]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.07.22-22.10.33:008][373]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.07.22-22.10.33:018][373]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.07.22-22.10.33:052][373]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2017.07.22-22.10.33:056][373]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_0, compiling. 
+[2017.07.22-22.10.33:062][373]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.07.22-22.10.33:065][373]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.07.22-22.10.34:728][511]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-22.10.34:728][511]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.10.34:728][511]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.10.34:728][511]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.10.38:864][940]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.07.22-22.10.39:630][996]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-22.10.39:630][996]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.10.39:630][996]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.10.39:630][996]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.10.40:217][ 50]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-22.10.40:604][ 50]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.07.22-22.10.40:639][ 50]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.10.40:665][ 50]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.10.40:693][ 50]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.10.40:727][ 50]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.10.40:771][ 50]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-22.10.41:245][ 50]TextureStreamingBuild:Display: Compiling optional shaders took 0.480 seconds.
+[2017.07.22-22.10.43:310][187]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-22.10.43:310][187]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.10.43:310][187]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.10.43:310][187]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.10.50:474][814]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.07.22-22.10.50:485][814]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.07.22-22.10.51:463][894]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.07.22-22.10.51:474][894]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.07.22-22.10.52:708][  3]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.07.22-22.10.52:720][  3]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.07.22-22.10.53:523][ 59]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-22.10.53:523][ 59]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.10.53:523][ 59]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.10.53:523][ 59]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.10.54:311][141]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.07.22-22.10.54:325][141]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_2, compiling. 
+[2017.07.22-22.10.55:137][198]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-22.10.55:137][198]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.10.55:137][198]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.10.55:137][198]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.10.56:651][348]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-22.10.57:040][348]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.07.22-22.10.57:072][348]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.10.57:104][348]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.10.57:138][348]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.10.57:176][348]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.10.57:215][348]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-22.10.57:688][348]TextureStreamingBuild:Display: Compiling optional shaders took 0.479 seconds.
+[2017.07.22-22.10.59:792][494]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-22.10.59:792][494]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.10.59:792][494]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.10.59:792][494]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.11.14:003][907]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.07.22-22.11.14:013][907]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_2, compiling. 
+[2017.07.22-22.11.14:839][954]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-22.11.14:839][954]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.11.14:839][954]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.11.14:839][954]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.11.23:613][877]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.07.22-22.11.23:626][877]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSample_1, compiling. 
+[2017.07.22-22.11.23:655][877]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_2, compiling. 
+[2017.07.22-22.11.24:469][923]MaterialEditorStats: Info Base pass shader: 81 instructions
+[2017.07.22-22.11.24:469][923]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.11.24:469][923]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.11.24:469][923]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.11.30:147][355]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.07.22-22.11.30:162][355]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionLandscapeLayerCoords_2, compiling. 
+[2017.07.22-22.11.30:932][399]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.11.30:933][399]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.11.30:933][399]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.11.30:933][399]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.11.31:848][458]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-22.11.32:245][458]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.07.22-22.11.32:279][458]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.11.32:307][458]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.11.32:342][458]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.11.32:379][458]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.11.32:418][458]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-22.11.32:876][458]TextureStreamingBuild:Display: Compiling optional shaders took 0.463 seconds.
+[2017.07.22-22.11.34:896][546]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.11.34:896][546]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.11.34:896][546]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.11.34:896][546]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.11.42:424][121]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.07.22-22.11.43:203][165]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.11.43:203][165]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.11.43:203][165]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.11.43:203][165]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.11.44:255][236]LogMaterialEditor: Applying material M_LandScape
+[2017.07.22-22.11.44:737][236]LogMaterial: Missing cached shader map for material PreviewMaterial_2, compiling. 
+[2017.07.22-22.11.44:771][236]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.11.44:804][236]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.11.44:833][236]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.11.44:867][236]LogMaterial: Missing cached shader map for material M_LandScape, compiling. 
+[2017.07.22-22.11.44:901][236]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_LandScape, compiling. 
+[2017.07.22-22.11.45:367][236]TextureStreamingBuild:Display: Compiling optional shaders took 0.473 seconds.
+[2017.07.22-22.11.47:390][326]MaterialEditorStats: Info Base pass shader: 82 instructions
+[2017.07.22-22.11.47:390][326]MaterialEditorStats: Info Vertex shader: 31 instructions
+[2017.07.22-22.11.47:391][326]MaterialEditorStats: Info Texture samplers: 4/16
+[2017.07.22-22.11.47:391][326]MaterialEditorStats: Info User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2017.07.22-22.11.53:128][730]LogMaterialEditor: Saving and Compiling material M_LandScape
+[2017.07.22-22.11.53:210][730]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/M_LandScape" FILE="../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Materials/M_LandScape.uasset" SILENT=true
+[2017.07.22-22.11.53:224][730]LogSavePackage: Save=11.04ms
+[2017.07.22-22.11.53:224][730]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/M_LandScape62B42C7B478AC506EAC97BA2DA2D55CC.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Materials/M_LandScape.uasset'
+[2017.07.22-22.11.53:226][730]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Materials/M_LandScape.uasset
+[2017.07.22-22.12.14:789][547]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Geometry/lambert1" FILE="../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Geometry/lambert1.uasset" SILENT=true
+[2017.07.22-22.12.14:815][547]LogSavePackage: Save=23.59ms
+[2017.07.22-22.12.14:815][547]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/lambert188DA363349DE93B9D4DA388F4C7F683A.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Geometry/lambert1.uasset'
+[2017.07.22-22.12.14:817][547]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Geometry/lambert1.uasset
+[2017.07.22-22.12.17:418][547]LogSavePackage: Save=2519.30ms
+[2017.07.22-22.12.17:418][547]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/ThirdPersonExampleMap288AB13B4AF29F0574D15AB34760EF34.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap'
+[2017.07.22-22.12.17:422][547]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap
+[2017.07.22-22.12.17:432][547]LogFileHelpers: Saving map 'ThirdPersonExampleMap' took 2.613
+[2017.07.22-22.12.17:644][547]LogSavePackage: Save=188.27ms
+[2017.07.22-22.12.17:644][547]LogSavePackage: Moving '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/ThirdPersonExampleMap_BuiltData5CB63B424932C9F6B35D75A1D308361F.tmp' to '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap_BuiltData.uasset'
+[2017.07.22-22.12.17:647][547]LogSavePackage:Display: Finished SavePackage ../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap_BuiltData.uasset
+[2017.07.22-22.12.17:680][547]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.07.22-22.12.17:843][548]Cmd: QUIT_EDITOR
+[2017.07.22-22.12.17:873][548]LogExit: Preparing to exit.
+[2017.07.22-22.12.18:277][548]LogDirectoryWatcher: A directory notification for 'F:/JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/' was aborted.
+[2017.07.22-22.12.18:343][548]LogExit: Editor shut down
+[2017.07.22-22.12.18:352][548]LogExit: Transaction tracking system shut down
+[2017.07.22-22.12.18:421][548]LogObj: Freed 0b from 0 cluster array pools.
+[2017.07.22-22.12.18:421][548]LogExit: Object subsystem successfully closed.
+[2017.07.22-22.12.18:439][548]LogD3D11RHI: Shutdown
+[2017.07.22-22.12.18:439][548]LogD3D11RHI: CleanupD3DDevice
+[2017.07.22-22.12.18:571][548]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.07.22-22.12.18:578][548]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (528)
+[2017.07.22-22.12.18:578][548]LogModuleManager: Shutting down and abandoning module MaterialEditor (526)
+[2017.07.22-22.12.18:578][548]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (524)
+[2017.07.22-22.12.18:578][548]LogModuleManager: Shutting down and abandoning module CrashTracker (522)
+[2017.07.22-22.12.18:578][548]LogModuleManager: Shutting down and abandoning module SceneOutliner (520)
+[2017.07.22-22.12.18:578][548]LogModuleManager: Shutting down and abandoning module AddContentDialog (518)
+[2017.07.22-22.12.18:578][548]LogDirectoryWatcher: A directory notification for 'F:/UNREAL/UE_4.16/FeaturePacks/' was aborted.
+[2017.07.22-22.12.18:578][548]LogModuleManager: Shutting down and abandoning module WidgetCarousel (517)
+[2017.07.22-22.12.18:578][548]LogModuleManager: Shutting down and abandoning module EditorWidgets (514)
+[2017.07.22-22.12.18:578][548]LogModuleManager: Shutting down and abandoning module CollectionManager (512)
+[2017.07.22-22.12.18:578][548]LogDirectoryWatcher: A directory notification for 'F:/JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Collections/' was aborted.
+[2017.07.22-22.12.18:578][548]LogDirectoryWatcher: A directory notification for 'F:/JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/Developers/PriestBeast/Collections/' was aborted.
+[2017.07.22-22.12.18:579][548]LogDirectoryWatcher: A directory notification for 'F:/JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Saved/Collections/' was aborted.
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module StatsViewer (510)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module FoliageEdit (508)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module LandscapeEditor (506)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module MeshPaintMode (504)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (502)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module ActorPickerMode (500)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module GeometryMode (498)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module TextureAlignMode (496)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module BspMode (494)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module HardwareSurvey (492)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (490)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module AutomationWorker (488)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (486)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (484)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module PlacementMode (483)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (480)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (478)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (476)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (474)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (472)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module Media (471)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (468)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module CharacterAI (466)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module AudioCapture (464)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module SequenceRecorder (463)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module SmartSnapping (460)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module SessionServices (458)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module ViewportSnapping (456)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module ViewportInteraction (454)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module ClothPainter (452)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module LogVisualizer (450)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module IntroTutorials (448)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (447)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (444)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (442)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (440)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (438)
+[2017.07.22-22.12.18:579][548]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (437)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (434)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (432)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module InputBindingEditor (430)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module MergeActors (428)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module SizeMap (426)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module TreeMap (424)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module ReferenceViewer (422)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (420)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module LocalizationService (419)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module HardwareTargeting (416)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (414)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module UndoHistory (412)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module UserFeedback (410)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module XmlParser (408)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module Blutility (406)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (404)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (403)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (400)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module SettingsEditor (398)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module ProjectLauncher (396)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module SessionFrontend (394)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module ProfilerClient (392)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module DeviceManager (390)
+[2017.07.22-22.12.19:021][548]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (389)
+[2017.07.22-22.12.19:074][548]LogModuleManager: Shutting down and abandoning module AutomationController (386)
+[2017.07.22-22.12.19:074][548]LogModuleManager: Shutting down and abandoning module AutomationWindow (384)
+[2017.07.22-22.12.19:074][548]LogModuleManager: Shutting down and abandoning module Layers (382)
+[2017.07.22-22.12.19:074][548]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (380)
+[2017.07.22-22.12.19:074][548]LogModuleManager: Shutting down and abandoning module DetailCustomizations (378)
+[2017.07.22-22.12.19:074][548]LogModuleManager: Shutting down and abandoning module PackagesDialog (376)
+[2017.07.22-22.12.19:074][548]LogModuleManager: Shutting down and abandoning module Persona (374)
+[2017.07.22-22.12.19:074][548]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (373)
+[2017.07.22-22.12.19:074][548]LogModuleManager: Shutting down and abandoning module AnimGraph (371)
+[2017.07.22-22.12.19:074][548]LogModuleManager: Shutting down and abandoning module Kismet (368)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module ClassViewer (366)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module Toolbox (364)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module ModuleUI (362)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module MovieSceneTools (360)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module OutputLog (358)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module GammaUI (356)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module Documentation (354)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (352)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module MovieScene (350)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module Niagara (348)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module NiagaraEditor (347)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (344)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module AnalyticsET (342)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module PortalServices (340)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module PortalRpc (338)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module MessagingRpc (336)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module AIModule (334)
+[2017.07.22-22.12.19:075][548]LogModuleManager: Shutting down and abandoning module GameplayDebugger (333)
+[2017.07.22-22.12.19:076][548]LogModuleManager: Shutting down and abandoning module AITestSuite (331)
+[2017.07.22-22.12.19:076][548]LogModuleManager: Shutting down and abandoning module ProfilerService (328)
+[2017.07.22-22.12.19:245][548]LogModuleManager: Shutting down and abandoning module TaskGraph (326)
+[2017.07.22-22.12.19:245][548]LogModuleManager: Shutting down and abandoning module SteamVRController (324)
+[2017.07.22-22.12.19:245][548]LogModuleManager: Shutting down and abandoning module SteamVR (322)
+[2017.07.22-22.12.19:245][548]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (320)
+[2017.07.22-22.12.19:245][548]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (318)
+[2017.07.22-22.12.19:245][548]LogModuleManager: Shutting down and abandoning module OculusLibrary (316)
+[2017.07.22-22.12.19:245][548]LogModuleManager: Shutting down and abandoning module OculusInput (314)
+[2017.07.22-22.12.19:245][548]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (312)
+[2017.07.22-22.12.19:245][548]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (310)
+[2017.07.22-22.12.19:245][548]LogModuleManager: Shutting down and abandoning module CableComponent (308)
+[2017.07.22-22.12.19:245][548]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (306)
+[2017.07.22-22.12.19:245][548]LogModuleManager: Shutting down and abandoning module AndroidPermission (304)
+[2017.07.22-22.12.19:245][548]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (300)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module HTML5Networking (298)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module AlembicImporter (296)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module AlembicLibrary (295)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module GeometryCache (294)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (293)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (288)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module SuperSearch (287)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (284)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module PluginBrowser (282)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (280)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (278)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module DesktopPlatform (277)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module UObjectPlugin (274)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (272)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (270)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module GitSourceControl (268)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module SourceControl (267)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (264)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (262)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (260)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module Paper2DEditor (258)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module MeshPaint (257)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module LevelEditor (255)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (254)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module MainFrame (252)
+[2017.07.22-22.12.19:246][548]LogModuleManager: Shutting down and abandoning module HotReload (251)
+[2017.07.22-22.12.19:247][548]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (246)
+[2017.07.22-22.12.19:247][548]LogModuleManager: Shutting down and abandoning module PhysXVehicles (244)
+[2017.07.22-22.12.19:247][548]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (242)
+[2017.07.22-22.12.19:247][548]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (240)
+[2017.07.22-22.12.19:247][548]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (238)
+[2017.07.22-22.12.19:247][548]LogModuleManager: Shutting down and abandoning module UdpMessaging (236)
+[2017.07.22-22.12.19:348][548]LogModuleManager: Shutting down and abandoning module TcpMessaging (234)
+[2017.07.22-22.12.19:448][548]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
+[2017.07.22-22.12.19:448][548]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
+[2017.07.22-22.12.19:448][548]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
+[2017.07.22-22.12.19:448][548]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
+[2017.07.22-22.12.19:448][548]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
+[2017.07.22-22.12.19:448][548]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2017.07.22-22.12.19:451][548]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
+[2017.07.22-22.12.19:451][548]LogModuleManager: Shutting down and abandoning module Paper2D (218)
+[2017.07.22-22.12.19:451][548]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2017.07.22-22.12.19:451][548]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2017.07.22-22.12.19:451][548]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
+[2017.07.22-22.12.19:451][548]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
+[2017.07.22-22.12.19:451][548]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
+[2017.07.22-22.12.19:451][548]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
+[2017.07.22-22.12.19:451][548]LogModuleManager: Shutting down and abandoning module VREditor (204)
+[2017.07.22-22.12.19:451][548]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
+[2017.07.22-22.12.19:451][548]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
+[2017.07.22-22.12.19:451][548]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
+[2017.07.22-22.12.19:452][548]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
+[2017.07.22-22.12.19:452][548]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
+[2017.07.22-22.12.19:452][548]LogModuleManager: Shutting down and abandoning module UMG (192)
+[2017.07.22-22.12.19:452][548]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
+[2017.07.22-22.12.19:452][548]LogModuleManager: Shutting down and abandoning module Sequencer (190)
+[2017.07.22-22.12.19:452][548]LogModuleManager: Shutting down and abandoning module AssetTools (188)
+[2017.07.22-22.12.19:452][548]LogModuleManager: Shutting down and abandoning module MessageLog (187)
+[2017.07.22-22.12.19:452][548]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
+[2017.07.22-22.12.19:452][548]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
+[2017.07.22-22.12.19:452][548]LogModuleManager: Shutting down and abandoning module Slate (178)
+[2017.07.22-22.12.19:452][548]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
+[2017.07.22-22.12.19:459][548]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
+[2017.07.22-22.12.19:459][548]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
+[2017.07.22-22.12.19:459][548]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
+[2017.07.22-22.12.19:459][548]LogModuleManager: Shutting down and abandoning module Networking (168)
+[2017.07.22-22.12.19:459][548]LogModuleManager: Shutting down and abandoning module Core (164)
+[2017.07.22-22.12.19:459][548]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
+[2017.07.22-22.12.19:637][548]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.07.22-22.12.19:638][548]LogDirectoryWatcher: A directory notification for '../../../../../JasonProjects/Dragons_Lair/DL_Prototype/DL_Prototype/Content/' was aborted.
+[2017.07.22-22.12.19:638][548]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.07.22-22.12.19:638][548]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2017.07.22-22.12.19:641][548]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
+[2017.07.22-22.12.19:641][548]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
+[2017.07.22-22.12.19:641][548]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
+[2017.07.22-22.12.19:641][548]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
+[2017.07.22-22.12.19:641][548]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
+[2017.07.22-22.12.19:641][548]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
+[2017.07.22-22.12.19:641][548]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
+[2017.07.22-22.12.19:641][548]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
+[2017.07.22-22.12.19:641][548]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2017.07.22-22.12.19:722][548]LogDerivedDataCache: Shutdown
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module OculusRift (56)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module GearVRController (54)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module GearVR (52)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2017.07.22-22.12.19:722][548]LogOnline:Display: Unloading online subsystem: NULL
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2017.07.22-22.12.19:722][548]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2017.07.22-22.12.19:722][548]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.07.22-22.12.19:722][548]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B59C4FDA2-42F5-88EF-3E19-0E901F86EF58%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.2-3514769%2B%2B%2BUE4%2BRelease-4.16&UserID=f756f8e34918f546edb14d89a277fd38%7C66873013a811489eb12e741d818b9c64%7C0654a9fb-8ae7-496a-b8b2-e9fa44301ff0&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.07.22-22.12.19:728][548]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2017.07.22-22.12.19:729][548]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
+[2017.07.22-22.12.19:729][548]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2017.07.22-22.12.19:729][548]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2017.07.22-22.12.19:729][548]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.07.22-22.12.19:729][548]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.07.22-22.12.19:729][548]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.07.22-22.12.19:729][548]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.07.22-22.12.19:729][548]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.07.22-22.12.19:730][548]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.07.22-22.12.19:730][548]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.07.22-22.12.19:730][548]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.07.22-22.12.19:730][548]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.07.22-22.12.19:730][548]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.07.22-22.12.19:730][548]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.07.22-22.12.19:730][548]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.07.22-22.12.19:730][548]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.07.22-22.12.19:730][548]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.07.22-22.12.19:730][548]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.07.22-22.12.19:731][548]LogExit: Exiting.
+[2017.07.22-22.12.19:737][548]Log file closed, 07/22/17 15:12:19
